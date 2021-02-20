@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label{
+      font-weight: bold;
+      color: #c5d7bd;
+    }
+    #i8:checked + data{
+      color: red;
+      font-weight: bold;
+    }
+    #i22:checked + label.label1{
+      color: green;
+      font-weight: bold;
+    
+    }
+    fieldset{
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #314e52;
+    }
+    p{
+    margin-left: 300px;
+    margin-right: 300px;
+    }
+    #labelid1{
+        margin-left: 300px;
+    }
+    legend{
+        background-color: #85603f;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <fieldset>
+
+        <legend>Application</legend>
+  
+        <form action="mailto:toham045@gmail.com" id="myform" method="POST" enctype="text/plain">
+
+            <label for="i1">1.Name:</label>
+            <input type="text" name="username" id="i1" value="Enter your nickname" size="35px"><br><br>
+
+            <label for="i2">2.Email:</label>
+            <input type="email" name="useremail" id="i2" autofocus style="margin: 30px;"> <br><br>
+
+            <label for="i3">3.Password:</label>
+            <input type="password" name="password" id="i3" disabled> <br><br>
+
+            <label for="i4">4.Mobile:</label>
+            <input type="tel" name="userphone" id="i4"><br><br>
+
+            <label for="i5">5.Date of birth:</label>
+            <input type="date" name="userdob" id="i5"><br><br>
+
+            <label for="i6">6.Gender:</label>
+            <input type="radio" name="usergender" id="i6">Male
+            <input type="radio" name="usergender" id="i6">Female
+            <input type="radio" name="usergender" id="i6">Other <br><br>
+
+            <label for="i7">7.Languages: </label>
+            Arabic
+            <input type="radio" name="userlan2" id="i7">
+            English
+            <input type="radio" name="userlan3" id="i7">
+            Bengali
+            <input type="radio" name="userlan1" id="i7"> <br><br>
+
+            <label for="i8">8.Departmrnt:</label><br><br>
+            <input type="checkbox" name="dept" id="i8" checked><data>Civil</data><br>
+            <input type="checkbox" name="dept" id="i8"><data>EEE</data> <br>
+            <input type="checkbox" name="dept" id="i8"><data>CSE</data> <br><br>
+
+            <label for="i9">9.Exam date & time:</label>
+            <input type="datetime-local" name="EDT" id="i9"> <br><br> 
+
+            <label for="i10">10.Admission Time(Optional):</label>
+            <input type="month" name="AT" id="i10"><br><br>
+
+            <label for="i11">11.1st Exam time:</label>
+            <input type="week" name="1ET" id="i11"><br><br>
+
+            <label for="i12">12.Your favourite color:</label>
+            <input type="color" name="usercolor" id="i12"><br><br>
+
+            <label for="i13">13.Your Photo:</label>
+            <input type="file" name="userpic" id="i13" accept="image/*,video/*" multiple><br><br>
+
+            <label for="i14">14.How many brothers and sisters have you?</label>
+            <input type="number" name="usersibling" id="i14" min="1" max="7"> <br><br>
+
+            <label for="i15">15.Price Range:</label>
+            <input type="range" name="prange" id="i15" min="1" max="20"><br><br>
+
+            <label for="i16">16.Search Anything</label>
+            <input type="search" name="userhistory" id="i16"> <br><br>
+
+            <label for="i17">17.Link your profile:</label>
+            <input type="url" name="userprofile" id="i17"> <br><br>
+
+            <label for="i18">18.What is your favourite programming language?</label>
+            <input type="text" name="" id="i18" list="language">
+            <datalist id="language">
+            <option value="PHP">
+            <option value="Python">
+            <option value="Java">
+            <option value="Mysquel">
+            <option value="c++">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="Wordpress">
+            <option value="Bootstrap">
+            <option value="Jquery">
+            </datalist><br><br>
+
+            <label for="">19.What is your favourite car brand?</label>
+            <select class="" name="">
+            <option value="">Mercedes</option>
+            <option value="">Honda</option>
+            <option value="">BMW</option>
+            <option value="">Chevrolet</option>
+            <option value="">Hyundai</option>
+            <option value="">Nissan</option>
+            <option value="">Audi</option>
+            <option value="">Pajero</option>
+            <option value="">Parado</option>
+            <option value="" selected>Lemberghini</option>
+            </select><br><br>
+
+            <label for="i20">Submite Time:</label>
+            <input type="time" name="subtime" id="i20"><br><br>
+
+            <input type="checkbox" name="" id="i22">
+            <label for="i22" class="label1">Accept all condition</label><br><br>
+
+            <label for="i23">Your Massage:</label>
+            <textarea name="" id="i23" cols="30" rows="10" placeholder="comment box"></textarea><br><br>
+
+            <input type="image" src="subs.jpg" width="100px" name="" id="">
+
+            <input type="reset" name="" id="">
+
+            <input type="submit" name="" id=""value="submit to server 2" formaction="subscribe.html">
+
+            <input type="button" name="" id="" value="click on me"><br><br>
+
+        
+
+        
+
+        </form>
+
+    </fieldset>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dicta tempore, ullam neque numquam explicabo accusamus ipsam repellat assumenda, repudiandae qui eligendi, optio consequatur ratione. Deserunt sapiente ipsum dignissimos officiis?</p>
+
+  <label for="i21" id="labelid1">Give rating:</label>
+  <input type="text" name="userrating" id="i21" form="myform" maxlength="3" placeholder="Give your ratings" required>
+
+</body>
+</html>
